@@ -153,6 +153,150 @@ public class ventana extends JFrame {
         panel.add(botonBorrar);
 
 
+
+        // Eventos de los botones
+        boton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                comprovarTexto(pantalla, PantallaSuperior);
+                int tamanyo = verTamanyoTexto(pantalla);
+                if (tamanyo == 1 && pantalla.getText().equals("0")) {
+                    pantalla.setText("");
+                }
+                pantalla.setText(pantalla.getText() + "1");
+            }
+        });
+
+        boton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                comprovarTexto(pantalla, PantallaSuperior);
+                int tamanyo = verTamanyoTexto(pantalla);
+                if (tamanyo == 1 && pantalla.getText().equals("0")) {
+                    pantalla.setText("");
+                }
+                pantalla.setText(pantalla.getText() + "2");
+
+            }
+        });
+
+
+        boton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                comprovarTexto(pantalla, PantallaSuperior);
+                int tamanyo = verTamanyoTexto(pantalla);
+                if (tamanyo == 1 && pantalla.getText().equals("0")) {
+                    pantalla.setText("");
+                }
+                pantalla.setText(pantalla.getText() + "3");
+            }
+        });
+
+        boton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                comprovarTexto(pantalla, PantallaSuperior);
+                int tamanyo = verTamanyoTexto(pantalla);
+                if (tamanyo == 1 && pantalla.getText().equals("0")) {
+                    pantalla.setText("");
+                }
+                pantalla.setText(pantalla.getText() + "4");
+            }
+        });
+
+        boton5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                comprovarTexto(pantalla, PantallaSuperior);
+                int tamanyo = verTamanyoTexto(pantalla);
+                if (tamanyo == 1 && pantalla.getText().equals("0")) {
+                    pantalla.setText("");
+                }
+                pantalla.setText(pantalla.getText() + "5");
+            }
+        });
+
+
+        boton6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                comprovarTexto(pantalla, PantallaSuperior);
+                int tamanyo = verTamanyoTexto(pantalla);
+                if (tamanyo == 1 && pantalla.getText().equals("0")) {
+                    pantalla.setText("");
+                }
+                pantalla.setText(pantalla.getText() + "6");
+            }
+        });
+
+        boton7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                comprovarTexto(pantalla, PantallaSuperior);
+                int tamanyo = verTamanyoTexto(pantalla);
+                if (tamanyo == 1 && pantalla.getText().equals("0")) {
+                    pantalla.setText("");
+                }
+                pantalla.setText(pantalla.getText() + "7");
+            }
+        });
+
+
+        boton8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                comprovarTexto(pantalla, PantallaSuperior);
+                int tamanyo = verTamanyoTexto(pantalla);
+                if (tamanyo == 1 && pantalla.getText().equals("0")) {
+                    pantalla.setText("");
+                }
+                pantalla.setText(pantalla.getText() + "8");
+            }
+        });
+
+
+
+        boton9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                comprovarTexto(pantalla, PantallaSuperior);
+                int tamanyo = verTamanyoTexto(pantalla);
+                if (tamanyo == 1 && pantalla.getText().equals("0")) {
+                    pantalla.setText("");
+                }
+                pantalla.setText(pantalla.getText() + "9");
+            }
+        });
+
+        boton0.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                comprovarTexto(pantalla, PantallaSuperior);
+                int tamanyo = verTamanyoTexto(pantalla);
+                if (tamanyo == 1 && pantalla.getText().equals("0")) {
+                    pantalla.setText("");
+                }
+                pantalla.setText(pantalla.getText() + "0");
+            }
+        });
+
+
+
+        botonSuma.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                comprovarTexto(pantalla, PantallaSuperior);
+                String texto = pantalla.getText();
+                PantallaSuperior.setText(texto + "+");
+                pantalla.setText("0");
+            }
+        });
+
     }
+
+
+    public void comprovarTexto(JTextField pantalla, JTextField PantallaSuperior) {
+        if (pantalla.getText().equals("to the calculator!")) {
+            pantalla.setText("");
+            PantallaSuperior.setText("0");
+
+        }
+    }
+
+    public int verTamanyoTexto(JTextField pantalla) {
+        int tamanyo = pantalla.getText().length();
+        return tamanyo;
+    }
+
 
 }
