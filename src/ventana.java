@@ -15,14 +15,29 @@ public class ventana extends JFrame {
         this.getContentPane().add(panel);
         panel.setLayout(null);
         JTextField pantalla = new JTextField();
-        pantalla.setBounds(10, 10, 350, 100);
+        pantalla.setBounds(10, 50, 350, 60);
+        pantalla.setBorder(null);
         pantalla.setEditable(false);
-        pantalla.setText("Welcome!");
+        pantalla.setText("to the calculator!");
         pantalla.setEnabled(false);
         pantalla.setHorizontalAlignment(JTextField.RIGHT);
         pantalla.setFont(new java.awt.Font("Consolas", 0, 30));
         pantalla.setBackground(new java.awt.Color((int) 09021f));
         panel.add(pantalla);
+
+        JTextField PantallaSuperior = new JTextField();
+        PantallaSuperior.setBounds(10, 0, 350, 60);
+        PantallaSuperior.setBorder(null);
+        PantallaSuperior.setEditable(false);
+        PantallaSuperior.setText("Welcome");
+        PantallaSuperior.setEnabled(false);
+        PantallaSuperior.setHorizontalAlignment(JTextField.RIGHT);
+        PantallaSuperior.setFont(new java.awt.Font("Consolas", 0, 20));
+        PantallaSuperior.setBackground(new java.awt.Color((int) 09021f));
+        panel.add(PantallaSuperior);
+
+
+
         JButton boton1 = new JButton("1");
         boton1.setBounds(10, 120, 80, 80);
         boton1.setForeground(new java.awt.Color((int) 0000000));
